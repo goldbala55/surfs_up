@@ -1,4 +1,9 @@
 # Byte-compiled / optimized / DLL files
+# my stuff
+app.py
+climate_analysis.ipynb
+
+
 __pycache__/
 *.py[cod]
 *$py.class
