@@ -19,5 +19,5 @@ In reviewing the monthly weather metrics we can observe the following:
 ## Summary Recommendations
 The weather analysis indicates there is a strong probability of success for the new business. Some additional weather analysis options:
 1. Check daytime precipitation patterns during June/December; ice cream and surfing sales will weaken if there are extended periods of rain during the day.
-2. rerun the temperature analysis looking only at daytime hours.  Not too many people surf at night so better daytime temperatures will drive business.
-3. One non-weather observation.  Collect and analyze local hotel occupancy rates along with the weather data.  Tourists can provide a substantial boost to the business.
+2. Rerun the temperature analysis looking only at daytime hours.  Not too many people surf at night so better daytime temperatures will drive business.
+3. One non-weather observation.  Collect and analyze local hotel occupancy rates and planned surfing events along with the weather data.  Tourists and surfing contests can provide a substantial boost to the business.
