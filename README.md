@@ -4,10 +4,11 @@ Surf Shop weather analysis
  Explain the purpose of this analysis.
 
 ## Resources
+Supplied Hawaii weather observations - SQLite DB
+
 Software: Python 3.7.9, Jupyter Notebook 6.1.4, pandas 1.1.3, numpy 1.17.0
-   1. Provided Hawaii weather observations SQLite DB
-   2. Git Bash 4.4.23, git LFS 2.13.2
-   3. SQLite 3.35.4, sqlalchemy 1.3.20
+1. Git Bash 4.4.23
+2. SQLite 3.35.4, sqlalchemy 1.3.20
 
 ## Results Analysis
  Provide a bulleted list with three major points from the two analysis deliverables. Use images as support where needed.
