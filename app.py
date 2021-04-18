@@ -15,7 +15,19 @@ from sqlalchemy import create_engine, func
 from flask import Flask, jsonify
 
 # setup DB engine, base classes, and session
+"""
 engine = create_engine("sqlite:///hawaii.sqlite")
+  this kept getting this error:
+  sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) SQLite objects created in a
+   thread can only be used in that same thread. The object was created in 
+   thread id ####1 and this is thread id ####2.
+after poking around found this stackoverflow item and tried the connection parameter below
+  -- it works :) 
+https://stackoverflow.com/questions/34009296/using-sqlalchemy-session-from-flask-raises-sqlite-objects-created-in-a-thread-c
+
+"""
+
+engine = create_engine('sqlite:///hawaii.sqlite?check_same_thread=False')
 
 Base = automap_base()
 Base.prepare(engine, reflect=True)
@@ -31,14 +43,14 @@ app = Flask(__name__)
 @app.route('/')
 def welcome():
     return(
-    '''
+    """
     Welcome to the Climate Analysis API!
     Available Routes:
-    /api/v1.0/precipitation
-    /api/v1.0/stations
-    /api/v1.0/tobs
-    /api/v1.0/temp/start/end
-    '''
+        /api/v1.0/precipitation
+        /api/v1.0/stations
+        /api/v1.0/tobs
+        /api/v1.0/temp/start/end
+    """
     )
 
 # create the precipitation route
